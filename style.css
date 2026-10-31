@@ -1,0 +1,65 @@
+/* ==========================================
+   IKT AUTÓKERESKEDÉS - EGYEDI STÍLUSLAP
+   ========================================== */
+
+/* 1. Általános beállítások */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2b2b2b;
+    background-color: #f8f9fa !important;
+}
+
+/* 2. Fejléc / Header egyedi dizájn */
+header {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+    border-bottom: 3px solid #3b82f6;
+}
+
+/* 3. Autó kártyák finomhangolása és lebegő effekt (Hover effect) */
+.card {
+    border: none !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Képek finom nagyítása mikor fölé viszed a kurzort */
+.card-img-top {
+    transition: transform 0.5s ease;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.04);
+}
+
+/* 4. Jelvények (Badges) szépítése */
+.badge {
+    font-size: 0.85rem !important;
+    padding: 0.5em 0.8em !important;
+    border-radius: 6px !important;
+}
+
+/* 5. Gombok egyedi felülírása */
+.btn {
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease-in-out !important;
+}
+
+/* 6. Oldtimer kiemelése (Arany / Veterán hangulat) */
+#oldtimer .card,
+.oldtimer-card {
+    border: 2px solid #f59e0b !important;
+    background-color: #fffbeb !important;
+}
+
+/* 7. Lábléc (Footer) */
+footer {
+    background-color: #0f172a !important;
+    border-top: 1px solid #334155;
+}
